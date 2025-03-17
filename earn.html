@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Earning Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 600px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .method {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .method h2 {
+            margin-top: 0;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Earning Methods</h1>
+        <p>Choose a method to start earning using AI:</p>
+
+        <!-- Method 1: AI Surveys -->
+        <div class="method">
+            <h2>1. AI-Powered Surveys</h2>
+            <p>Complete AI-generated surveys and earn rewards based on your responses.</p>
+            <button class="btn" onclick="startMethod('surveys')">Start Surveys</button>
+        </div>
+
+        <!-- Method 2: AI Content Creation -->
+        <div class="method">
+            <h2>2. AI Content Creation</h2>
+            <p>Use AI tools to create content (e.g., articles, videos) and earn money from platforms.</p>
+            <button class="btn" onclick="startMethod('content')">Start Creating</button>
+        </div>
+
+        <!-- Method 3: AI Data Labeling -->
+        <div class="method">
+            <h2>3. AI Data Labeling</h2>
+            <p>Help train AI models by labeling data and earn for each task completed.</p>
+            <button class="btn" onclick="startMethod('labeling')">Start Labeling</button>
+        </div>
+
+        <!-- Method 4: AI Affiliate Marketing -->
+        <div class="method">
+            <h2>4. AI Affiliate Marketing</h2>
+            <p>Promote AI-powered products and earn commissions for every sale.</p>
+            <button class="btn" onclick="startMethod('affiliate')">Start Promoting</button>
+        </div>
+    </div>
+
+    <script>
+    function startMethod(method) {
+        if (method === 'surveys') {
+            // Redirect to the surveys page
+            window.location.href = 'surveys.html';
+        } else if (method === 'content') {
+            // Redirect to the content creation page
+            window.location.href = 'content.html';
+        } else if (method === 'labeling') {
+            // Redirect to the data labeling page
+            window.location.href = 'data-labeling.html';
+        } else if (method === 'affiliate') {
+            // Redirect to the affiliate marketing page
+            window.location.href = 'affiliate.html';
+        } else {
+            alert(`You selected: ${method}. Redirecting to the earning platform...`);
+            // Simulate redirection to an external platform
+            setTimeout(() => {
+                window.location.href = `https://example.com/${method}`;
+            }, 2000);
+        }
+    }
+</script>
+</body>
+</html>
